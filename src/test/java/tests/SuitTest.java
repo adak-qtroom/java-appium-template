@@ -2,6 +2,9 @@ package tests;
 
 import com.epam.reportportal.testng.ReportPortalTestNGListener;
 import io.appium.java_client.MobileBy;
+import jdk.jfr.Description;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
@@ -13,5 +16,15 @@ import org.testng.annotations.Test;
 public class SuitTest extends BasePage {
     public static final Logger LOGGER = LoggerFactory.getLogger(SuitTest.class);
 
-   //!@testSuit
+    @BeforeEach
+    public void beforeEach() {
+        //!@beforeEach
+    }
+
+    //!@testSuit
+
+    @AfterEach
+    public void afterEach() {
+        //!@afterEach
+    }
 }
