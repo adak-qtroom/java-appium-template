@@ -61,13 +61,8 @@ public class BasePage {
             captureScreenshot(result.getMethod().getMethodName());
         }
 
-        private void captureScreenshot(String methodName1) {
-            try {
-                LoggingUtils.logBase64(((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64), methodName1);
-                LOGGER.info("Screenshot Base64: " + ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64));
-            } catch (IOException e) {
-                LOGGER.error("Failed to capture screenshot: " + e.getMessage());
-            }
+       private void captureScreenshot(String methodName1) {
+            LoggingUtils.logBase64(((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64), methodName1);
         }
 
         private String getCurrentTimestamp() {
