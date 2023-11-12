@@ -63,13 +63,8 @@ public class BasePage {
 
         private void captureScreenshot(String methodName1) {
             try {
-                File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-                String destDir = "path/to/save/";
-                String destFile = methodName1 + "_" + getCurrentTimestamp() + ".jpg";
-                File destination = new File(destDir + destFile);
-                FileUtils.copyFile(screenshotFile, destination);
+                LoggingUtils.logBase64(((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64), methodName1);
                 LOGGER.info("Screenshot Base64: " + ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64));
-                LOGGER.info("Screenshot saved successfully: " + destination.getAbsolutePath());
             } catch (IOException e) {
                 LOGGER.error("Failed to capture screenshot: " + e.getMessage());
             }
