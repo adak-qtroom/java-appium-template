@@ -1,7 +1,7 @@
 package tests;
 
 import com.epam.reportportal.testng.ReportPortalTestNGListener;
-import io.appium.java_client.*
+import io.appium.java_client.*;
 import jdk.jfr.Description;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
