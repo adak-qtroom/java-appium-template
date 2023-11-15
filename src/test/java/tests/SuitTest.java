@@ -11,6 +11,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import java.net.*;
+import java.net.http.*;
 
 @Listeners({ReportPortalTestNGListener.class})
 public class SuitTest extends BasePage {
