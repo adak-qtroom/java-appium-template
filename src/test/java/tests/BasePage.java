@@ -35,7 +35,7 @@ public class BasePage {
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UIAutomator2");
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "5.1.1");
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-        capabilities.setCapability(MobileCapabilityType.APP, "http://192.168.2.112:3333/mymci.apk");
+        capabilities.setCapability(MobileCapabilityType.APP, "https://ebcom.ir/static/mymci/mymci.apk");
         capabilities.setCapability("appPackage", "ir.mci.ecareapp");
         capabilities.setCapability("appActivity", "ir.mci.ecareapp.ui.activity.LauncherActivity");
         capabilities.setCapability(MobileCapabilityType.NO_RESET, true);
