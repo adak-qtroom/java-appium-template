@@ -13,6 +13,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import java.net.*;
 import java.net.http.*;
+import com.fasterxml.jackson.databind.*;
 
 @Listeners({ReportPortalTestNGListener.class})
 public class SuitTest extends BasePage {
