@@ -33,7 +33,7 @@ public class BasePage {
         LOGGER.info("configuring appium server parameters and connecting via driver...");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UIAutomator2");
-        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "5.1.1");
+        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "13");
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
         capabilities.setCapability(MobileCapabilityType.APP, "https://ebcom.ir/static/mymci/mymci.apk");
         capabilities.setCapability("appPackage", "ir.mci.ecareapp");
