@@ -39,8 +39,8 @@ public class BasePage {
         capabilities.setCapability("appPackage", "ir.mci.ecareapp");
         capabilities.setCapability("appActivity", "ir.mci.ecareapp.ui.activity.LauncherActivity");
         capabilities.setCapability(MobileCapabilityType.NO_RESET, false);
-        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "RF8W201TDWB");
-        capabilities.setCapability("udid", "RF8W201TDWB");
+        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "ALG1B00001780518225");
+        capabilities.setCapability("udid", "ALG1B00001780518225");
         driver = new AndroidDriver(new URL("http://192.168.2.171:31337/wd/hub"), capabilities);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 
